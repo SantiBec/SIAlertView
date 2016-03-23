@@ -845,8 +845,8 @@ static SIAlertView *__si_alert_current_view;
         
         #ifdef __IPHONE_7_0
             NSDictionary *attributes = @{
-+                                         NSFontAttributeName:self.messageLabel.font,
-+                                         };
+                                         NSFontAttributeName:self.messageLabel.font,
+                                         };
             // NSString class method: boundingRectWithSize:options:attributes:context is
             // available only on ios7.0 sdk.
             CGRect rect = [self.messageLabel.text boundingRectWithSize:CGSizeMake(CONTAINER_WIDTH - CONTENT_PADDING_LEFT * 2, maxHeight)
